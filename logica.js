@@ -20,8 +20,8 @@ formulario.addEventListener("submit", function (event) {
         if (dis<0) return "No tiene raices reales";
 
         //Calculamos las raices
-        let raiz1 = ((-b + dis)/(2*a))
-        let raiz2 = ((-b - dis)/(2*a))
+        let raiz1 = ((-b + Math.sqrt(dis))/(2*a))
+        let raiz2 = ((-b - Math.sqrt(dis))/(2*a))
         return "Las raices son: x<sub>1</sub> =" + raiz1+  " y x<sub>2</sub> =" + raiz2;
     }
     console.log(esCalc(a,b,c))
